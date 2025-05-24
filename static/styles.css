@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #0088ff, #00ffa6);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+ 
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 12px;
+  color: #000000;
+  text-align: center;
+  box-shadow: 0 0 15px rgb(255, 255, 255);
+}
+
+input[type="file"], button {
+  padding: 10px;
+  margin-top: 15px;
+  font-size: 16px;
+}
+
+img {
+  margin-top: 20px;
+  max-width: 300px;
+  border-radius: 8px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('background.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    height: 100vh;
+}

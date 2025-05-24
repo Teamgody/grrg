@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Waste Sorter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>ระบบแยกขยะอัตโนมัติ</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">วิเคราะห์</button>
+    </form>
+
+    {% if result %}
+        <h3>ผลลัพธ์: {{ result }}</h3>
+        <img src="{{ url_for('static', filename=bin_image) }}" width="200">
+    {% endif %}
+</body>
+</html>
+{% if bin_image %}
+  <img src="{{ url_for('static', filename=bin_image) }}" width="150">
+{% endif %}
